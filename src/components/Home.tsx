@@ -1,5 +1,5 @@
 import Resume from "../assets/images/resume.pdf";
-import Jay from "../assets/images/Jay2.png";
+import Jay from "../assets/images/Jane.png";
 const Home = () => {
   return (
     <div id="home">
