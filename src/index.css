@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500&family=Roboto:wght@300;400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +7,12 @@
 .App {
   width: 100%;
   display: flex;
+}
+/* h1 {
+  font-family: "Poppins", sans-serif;
+} */
+h2 {
+  font-family: "Dancing Script", cursive;
 }
 a {
   text-decoration: none;
@@ -53,6 +59,7 @@ nav {
   overflow: auto;
   background-color: black;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 .pages section {
   min-height: 400px;
@@ -61,7 +68,6 @@ nav {
 .title {
   font-size: 36px;
   font-weight: 900;
-  font-family: "Poppins", sans-serif;
   position: relative;
   z-index: 2;
 }
@@ -226,6 +232,7 @@ nav {
   border-radius: 50%;
   width: 400px;
   height: 400px;
+  position: relative;
 }
 .bioImg img {
   object-fit: cover;
@@ -233,11 +240,73 @@ nav {
   height: 100%;
   border-radius: 50%;
 }
+.bioImg div {
+  border: 4px solid wheat;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #0c0c14;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+}
+.bioImg .icon {
+  color: white;
+}
+.bioImg .one {
+  position: absolute;
+  bottom: 7px;
+  left: 40px;
+}
+.bioImg .two {
+  position: absolute;
+  bottom: -11px;
+  left: 90px;
+}
+.bioImg .three {
+  position: absolute;
+  bottom: -20px;
+  right: 170px;
+}
+.bioImg .four {
+  position: absolute;
+  bottom: -20px;
+  right: 117px;
+}
+.bioImg .five {
+  position: absolute;
+  bottom: 7px;
+  right: 60px;
+}
 .bio p {
   font-weight: 500;
-  padding-top: 20px;
+}
+.bioHead {
+  margin-top: 23px;
 }
 .bio h2 {
   text-align: center;
-  padding-top: 8px;
+  padding-top: 5px;
+}
+.bioPara {
+  padding-top: 10px;
+}
+.bioPara p {
+  padding-top: 20px;
+}
+.bioInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.bioInfo ul div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.bioInfo p {
+  font-family: "Dancing Script", cursive;
 }
