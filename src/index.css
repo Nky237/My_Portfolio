@@ -101,6 +101,42 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+/* ANIMATION  */
+
+.home .roll {
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+.home .roll h3 {
+  color: #ff9301;
+  line-height: 60px;
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 900;
+}
+.home .roll h3:nth-child(1) {
+  animation: move 10s infinite;
+}
+
+@keyframes move {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -70px;
+  }
+  50% {
+    margin-top: -120px;
+  }
+  75% {
+    margin-top: -70px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
 .homeFirst {
   width: 43%;
   line-height: 40px;
@@ -132,7 +168,7 @@ nav {
 }
 .homeFirst h1 {
   font-size: 70px;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .homeFirst p {
   padding-bottom: 2rem;

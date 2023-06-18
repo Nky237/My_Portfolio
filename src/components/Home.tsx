@@ -22,6 +22,11 @@ const Home = () => {
           <div>
             <h2>Hello, My name is</h2>
             <h1>Nkemdili Jane</h1>
+            <div className="roll">
+              <h3>Frontend Developer</h3>
+              <h3>Electronic Engineer </h3>
+              <h3>Technical writer</h3>
+            </div>
             <p>
               I design and develop services for customers of all sizes,
               specializing in creating stylish, modern websites, web services
