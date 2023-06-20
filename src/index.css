@@ -381,3 +381,43 @@ nav {
 .bioCard1 {
   width: 37%;
 }
+
+/* EDUCATION AND SKILLS */
+#skill {
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 60px;
+}
+.edu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  line-height: 28px;
+}
+.edu1 {
+  min-height: 400px;
+  width: 40%;
+  background-color: #0d0d15;
+  border-radius: 15px;
+  padding: 40px 30px;
+}
+.edu1 div {
+  margin-top: 30px;
+}
+.edu2 {
+  width: 50%;
+}
+.edu2 div {
+  position: relative;
+  margin-bottom: 50px;
+}
+.edu2 div h3::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: #e38301;
+  height: 10px;
+  top: 40px;
+  left: 0;
+}
