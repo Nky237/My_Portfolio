@@ -216,10 +216,10 @@ nav {
 #bio {
   background-color: #0d0d15;
   height: 100vh;
-}
-.bio {
   padding-left: 50px;
   padding-right: 40px;
+}
+.bio {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
@@ -309,4 +309,45 @@ nav {
 }
 .bioInfo p {
   font-family: "Dancing Script", cursive;
+}
+
+/* JOB */
+.title-cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.cardbio {
+  height: 360px;
+  width: 360px;
+  background-color: black;
+  border-radius: 15px;
+  line-height: 28px;
+  transition: 1s ease-in-out;
+}
+.cardbio .rad {
+  height: 130px;
+  width: 150px;
+  background-color: #ff9301;
+  border-radius: 0% 0% 80% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardbio .rad .icon {
+  font-size: 45px;
+}
+.cardbio .biotext {
+  padding: 40px 30px 0 30px;
+}
+.cardbio .biotext h3 {
+  padding-bottom: 20px;
+}
+.cardbio:hover {
+  background-color: #e38301;
+  transition: 1s ease-in-out;
+}
+.cardbio:hover .rad {
+  background-color: black;
+  transition: 1s ease-in-out;
 }
