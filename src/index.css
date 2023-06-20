@@ -351,3 +351,33 @@ nav {
   background-color: black;
   transition: 1s ease-in-out;
 }
+
+/* EXPERIENCE */
+#exp {
+  background-color: black;
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 60px;
+}
+.expCard {
+  min-height: 150px;
+  border-radius: 15px;
+  background-color: #0c0c14;
+  margin: 30px 0;
+  display: flex;
+  gap: 20px;
+  padding: 50px 40px;
+  line-height: 28px;
+}
+.biotxt {
+  padding-bottom: 20px;
+}
+.expCard span {
+  background-color: #ff9301;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+.bioCard1 {
+  width: 37%;
+}
