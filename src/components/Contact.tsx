@@ -1,10 +1,14 @@
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
+// REACT LEAFLET
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 const Contact = () => {
+  const center = [9.5934637, 8.1055707];
+
   return (
     <div id="contact">
-      {/* <h1 className="title" style={{ textAlign: "center" }}>Contact Me</h1> */}
       <div className="contact">
         <div className="contact1">
           <h3>What’s your story? Get in touch</h3>
@@ -44,6 +48,17 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      <MapContainer
+        center={center}
+        zoom={6}
+        style={{ width: "100%", height: "500px" }}
+      >
+        <TileLayer
+          url="https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=trFRj7aVqpKX9jWwUFeO"
+          attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+        />
+      </MapContainer>
     </div>
   );
 };

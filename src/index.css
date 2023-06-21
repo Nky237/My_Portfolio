@@ -43,13 +43,16 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-.icons {
+nav .icons {
   font-size: 30px;
   margin: 37px 0 0 0;
   cursor: pointer;
 }
+/* nav a:active {
+  color: red;
+} */
 .active .icons {
-  color: #ff9301; /* Set the background color to red for the active link */
+  color: #ff9301;
 }
 
 /* pages */
@@ -215,7 +218,7 @@ nav {
 #bio,
 #contact {
   background-color: #0d0d15;
-  height: 100vh;
+  min-height: 100vh;
   padding-left: 50px;
   padding-right: 40px;
   padding-top: 40px;
@@ -429,6 +432,7 @@ nav {
   justify-content: space-between;
   line-height: 28px;
   align-items: center;
+  margin-bottom: 60px;
 }
 .contact1 {
   width: 32%;
