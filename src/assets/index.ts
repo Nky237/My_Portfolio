@@ -1,0 +1,5 @@
+export {default as Link} from './images/Link.png'
+export {default as QR} from './images/QR.png'
+export {default as Weather} from './images/weather.png'
+export {default as Hire} from './images/Hire.png'
+export {default as Blogy} from './images/Blog.png'

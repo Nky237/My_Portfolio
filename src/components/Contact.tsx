@@ -35,7 +35,10 @@ const Contact = () => {
         </div>
         <div className="contact2">
           <h2>Say Something</h2>
-          <form action="">
+          <form
+            action="https://formsubmit.co/0bc4eedcd7b0bd97a5262722c21ba9c2"
+            method="POST"
+          >
             <div className="Con">
               <input type="text" placeholder="full name" />
               <input type="email" placeholder="Email" />
@@ -67,11 +70,8 @@ const Contact = () => {
           height="500px"
           title="map"
           className="absolute inset-0"
-          frameBorder={0}
-          marginHeight={0}
-          marginWidth={0}
           style={{ filter: "opacity(0.7)" }}
-           src="https://www.google.com/maps/embed/v1/place?q=Gbagada,+Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          src="https://www.google.com/maps/embed/v1/place?q=Gbagada,+Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
         ></iframe>
       </div>
     </div>

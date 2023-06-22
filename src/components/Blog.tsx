@@ -1,15 +1,26 @@
 import { useState } from "react";
+import { myData } from "../data";
+import Modal from "./Modal";
 
 const Blog = () => {
   const [pro, setPro] = useState(true);
   const [project, setProject] = useState(false);
   const [article, setArticle] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   // const showAll = () => {
   //   setPro(true);
   //   setProject(true);
   //   setArticle(true);
   // };
+  const handleDivClick = (item: any) => {
+    setSelectedItem(item);
+    setModalVisible(true);
+  };
+  const closeModal = () => {
+    setModalVisible(false);
+  };
 
   const showPro = () => {
     setPro(true);
@@ -51,23 +62,39 @@ const Blog = () => {
       </div> */}
       <div style={{ display: pro ? "block" : "none" }}>
         <h1>HTML PROJECTS</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-        voluptatum tempore consectetur?
+        <div className="ProGrid">
+          {myData.map((item) => (
+            <div onClick={() => handleDivClick(item)}>
+              <img src={item.image} alt="" />
+            </div>
+          ))}
+        </div>
       </div>
       <div style={{ display: project ? "block" : "none" }}>
         <h1>REACT PROJECTS</h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit velit ut
-        nobis necessitatibus iste soluta? Tempore, atque. Tempora praesentium
-        magnam fugiat, maxime quibusdam culpa, debitis exercitationem tempore
-        quaerat ipsa iusto.
+
+        <div className="ProGrid">
+          {myData.map((item) => (
+            <div onClick={() => handleDivClick(item)}>
+              <img src={item.image} alt="" />
+            </div>
+          ))}
+        </div>
       </div>
       <div style={{ display: article ? "block" : "none" }}>
         <h1>ARTICLES</h1>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
-        et magni quia a unde officia error aliquid iusto placeat ipsa, nam
-        obcaecati est aspernatur delectus doloremque recusandae blanditiis. At,
-        quam.
+        <div className="ProGrid">
+          {myData.map((item) => (
+            <div onClick={() => handleDivClick(item)}>
+              <img src={item.image} alt="" />
+            </div>
+          ))}
+        </div>
       </div>
+
+      {modalVisible && (
+        <Modal closeModal={closeModal} selectedItem={selectedItem} />
+      )}
     </div>
   );
 };
