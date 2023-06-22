@@ -426,6 +426,26 @@ nav .icons {
   left: 0;
 }
 
+/* PORFOLIO SECTION */
+#blog {
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 60px;
+}
+.proButton {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0;
+}
+.proButton .active {
+  border-bottom: 2px solid #e38301;
+}
+
+.proButton li {
+  list-style: none;
+  cursor: pointer;
+}
 /* CONTACT SECTION */
 .contact {
   display: flex;

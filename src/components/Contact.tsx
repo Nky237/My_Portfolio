@@ -2,11 +2,13 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 // REACT LEAFLET
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-const Contact = () => {
-  const center = [9.5934637, 8.1055707];
+// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+// import { LatLngTuple } from "leaflet";
 
+import "leaflet/dist/leaflet.css";
+
+const Contact = () => {
+  // const center: LatLngTuple = [9.5934637, 8.1055707];
   return (
     <div id="contact">
       <div className="contact">
@@ -49,7 +51,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <MapContainer
+      {/* <MapContainer
         center={center}
         zoom={6}
         style={{ width: "100%", height: "500px" }}
@@ -58,7 +60,20 @@ const Contact = () => {
           url="https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=trFRj7aVqpKX9jWwUFeO"
           attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
         />
-      </MapContainer>
+      </MapContainer> */}
+      <div>
+        <iframe
+          width="100%"
+          height="500px"
+          title="map"
+          className="absolute inset-0"
+          frameBorder={0}
+          marginHeight={0}
+          marginWidth={0}
+          style={{ filter: "opacity(0.7)" }}
+           src="https://www.google.com/maps/embed/v1/place?q=Gbagada,+Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+        ></iframe>
+      </div>
     </div>
   );
 };
