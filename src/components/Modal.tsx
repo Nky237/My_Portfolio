@@ -1,4 +1,12 @@
-const Modal = ({ closeModal, selectedItem }: any) => {
+// Modal.js
+const Modal = ({
+  closeModal,
+  selectedItem,
+  goToNextProject,
+  goToPreviousProject,
+  currentProjectIndex,
+  totalProjects,
+}: any) => {
   return (
     <div className="modaly">
       <div className="ModalContainer">
@@ -6,6 +14,11 @@ const Modal = ({ closeModal, selectedItem }: any) => {
         <img src={selectedItem.image} alt="" />
         <p>{selectedItem.para}</p>
       </div>
+      <button onClick={goToPreviousProject}>Previous</button>
+      <button onClick={goToNextProject}>Next</button>
+      <p>
+        {currentProjectIndex + 1} of {totalProjects}
+      </p>
     </div>
   );
 };

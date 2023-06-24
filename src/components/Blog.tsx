@@ -1,3 +1,4 @@
+// Blog.js
 import { useState } from "react";
 import { myData } from "../data";
 import Modal from "./Modal";
@@ -8,18 +9,26 @@ const Blog = () => {
   const [article, setArticle] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  // const showAll = () => {
-  //   setPro(true);
-  //   setProject(true);
-  //   setArticle(true);
-  // };
   const handleDivClick = (item: any) => {
     setSelectedItem(item);
     setModalVisible(true);
   };
+
   const closeModal = () => {
     setModalVisible(false);
+  };
+  
+
+  const previousSlide = () => {
+    setCurrentSlide((prev: number) => (prev === 0 ? 0 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev: number) =>
+      prev >= myData.length - 1 ? myData.length - 1 : prev + 1
+    );
   };
 
   const showPro = () => {
@@ -44,9 +53,6 @@ const Blog = () => {
     <div id="blog">
       <h1 className="title">PORTFOLIO</h1>
       <div className="proButton">
-        {/* <li onClick={showAll} className={all ? "active" : ""}>
-          All
-        </li> */}
         <li onClick={showPro} className={pro ? "active" : ""}>
           HTML Projects
         </li>
@@ -57,14 +63,11 @@ const Blog = () => {
           Articles
         </li>
       </div>
-      {/* <div style={{ display: all ? "block" : "none" }}>
-        <h3>ALL PROJECTS</h3>
-      </div> */}
       <div style={{ display: pro ? "block" : "none" }}>
         <h1>HTML PROJECTS</h1>
         <div className="ProGrid">
           {myData.map((item) => (
-            <div onClick={() => handleDivClick(item)}>
+            <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
             </div>
           ))}
@@ -72,10 +75,9 @@ const Blog = () => {
       </div>
       <div style={{ display: project ? "block" : "none" }}>
         <h1>REACT PROJECTS</h1>
-
         <div className="ProGrid">
           {myData.map((item) => (
-            <div onClick={() => handleDivClick(item)}>
+            <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
             </div>
           ))}
@@ -85,7 +87,7 @@ const Blog = () => {
         <h1>ARTICLES</h1>
         <div className="ProGrid">
           {myData.map((item) => (
-            <div onClick={() => handleDivClick(item)}>
+            <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
             </div>
           ))}
@@ -93,7 +95,15 @@ const Blog = () => {
       </div>
 
       {modalVisible && (
-        <Modal closeModal={closeModal} selectedItem={selectedItem} />
+        <Modal
+          closeModal={closeModal}
+          selectedItem={selectedItem}
+          goToPreviousProject={previousSlide}
+          goToNextProject={nextSlide}
+          currentProjectIndex={currentSlide}
+          totalProjects={myData.length}
+          myData={myData}
+        />
       )}
     </div>
   );
