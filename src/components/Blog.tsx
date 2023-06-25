@@ -9,7 +9,7 @@ const Blog = () => {
   const [article, setArticle] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
+
 
   const handleDivClick = (item: any) => {
     setSelectedItem(item);
@@ -21,15 +21,6 @@ const Blog = () => {
   };
   
 
-  const previousSlide = () => {
-    setCurrentSlide((prev: number) => (prev === 0 ? 0 : prev - 1));
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev: number) =>
-      prev >= myData.length - 1 ? myData.length - 1 : prev + 1
-    );
-  };
 
   const showPro = () => {
     setPro(true);
@@ -98,10 +89,6 @@ const Blog = () => {
         <Modal
           closeModal={closeModal}
           selectedItem={selectedItem}
-          goToPreviousProject={previousSlide}
-          goToNextProject={nextSlide}
-          currentProjectIndex={currentSlide}
-          totalProjects={myData.length}
           myData={myData}
         />
       )}

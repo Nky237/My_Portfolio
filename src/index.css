@@ -54,6 +54,26 @@ nav .icons {
 .active .icons {
   color: #ff9301;
 }
+.Navshow {
+  position: absolute;
+  right: 40px;
+  top: 550px;
+  display: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #e38301;
+  color: white;
+    z-index: 1;
+}
+.Navshow p {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+
+}
 
 /* pages */
 .pages {
@@ -623,6 +643,15 @@ nav .icons {
   }
   .nav {
     display: none;
+  }
+  .nav nav {
+    margin-top: 120px;
+  }
+  .Navshow {
+    display: block;
+  }
+  .activy {
+    display: block;
   }
   #bio,
   #contact,

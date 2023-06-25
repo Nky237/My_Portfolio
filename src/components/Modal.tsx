@@ -1,11 +1,7 @@
 // Modal.js
 const Modal = ({
   closeModal,
-  selectedItem,
-  goToNextProject,
-  goToPreviousProject,
-  currentProjectIndex,
-  totalProjects,
+  selectedItem
 }: any) => {
   return (
     <div className="modaly">
@@ -14,11 +10,7 @@ const Modal = ({
         <img src={selectedItem.image} alt="" />
         <p>{selectedItem.para}</p>
       </div>
-      <button onClick={goToPreviousProject}>Previous</button>
-      <button onClick={goToNextProject}>Next</button>
-      <p>
-        {currentProjectIndex + 1} of {totalProjects}
-      </p>
+    
     </div>
   );
 };

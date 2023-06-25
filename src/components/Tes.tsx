@@ -16,9 +16,9 @@ const Tes: React.FC = () => {
       }
     };
 
-    handleResize(); // Initial call to set the number of items based on the screen size
+    handleResize();
 
-    window.addEventListener("resize", handleResize); // Event listener to update the number of items on window resize
+    window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize); // Cleanup the event listener on component unmount
