@@ -1,6 +1,6 @@
 // Blog.js
 import { useState } from "react";
-import { myData } from "../data";
+import { myData, myData2, myData3 } from "../data";
 import Modal from "./Modal";
 
 const Blog = () => {
@@ -10,7 +10,6 @@ const Blog = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-
   const handleDivClick = (item: any) => {
     setSelectedItem(item);
     setModalVisible(true);
@@ -19,8 +18,6 @@ const Blog = () => {
   const closeModal = () => {
     setModalVisible(false);
   };
-  
-
 
   const showPro = () => {
     setPro(true);
@@ -67,7 +64,7 @@ const Blog = () => {
       <div style={{ display: project ? "block" : "none" }}>
         <h1>REACT PROJECTS</h1>
         <div className="ProGrid">
-          {myData.map((item) => (
+          {myData2.map((item) => (
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
             </div>
@@ -77,7 +74,7 @@ const Blog = () => {
       <div style={{ display: article ? "block" : "none" }}>
         <h1>ARTICLES</h1>
         <div className="ProGrid">
-          {myData.map((item) => (
+          {myData3.map((item) => (
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
             </div>
