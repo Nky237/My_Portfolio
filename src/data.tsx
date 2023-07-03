@@ -15,7 +15,7 @@ import {
   Reducery,
   sushi,
   LMS,
-  Diet,
+  Diety,
   Note,
   port,
 } from "./assets";
@@ -69,7 +69,7 @@ export const myData2: Prof[] = [
   },
   {
     id: 3,
-    image: Diet,
+    image: Diety,
     para: "lorem30",
   },
   {
