@@ -64,7 +64,7 @@ nav .icons {
   border-radius: 50%;
   background-color: #e38301;
   color: white;
-    z-index: 1;
+  z-index: 1;
 }
 .Navshow p {
   font-size: 40px;
@@ -72,7 +72,6 @@ nav .icons {
   align-items: center;
   justify-content: center;
   padding-top: 8px;
-
 }
 
 /* pages */
@@ -453,6 +452,7 @@ nav .icons {
   padding-left: 50px;
   padding-right: 40px;
   padding-top: 60px;
+  padding-bottom: 50px;
 }
 .proButton {
   display: flex;
@@ -483,7 +483,9 @@ nav .icons {
   height: 100%;
   cursor: pointer;
   filter: grayscale(0);
+  padding-bottom: 5px;
 }
+
 .ProGrid div img:hover {
   transform: scale(1.1);
   filter: grayscale(100);
@@ -515,8 +517,20 @@ nav .icons {
   padding-right: 10px;
   cursor: pointer;
 }
+.ModalContainer h2 {
+  padding-top: 10px;
+  color: black;
+  padding-left: 40px;
+}
 .ModalContainer p {
-  text-align: center;
+  padding-top: 10px;
+  color: black;
+  padding-left: 40px;
+  line-height: 30px;
+}
+.ModalContainer a {
+  color: black;
+  text-decoration: underline;
 }
 .ModalContainer img {
   height: 200px;

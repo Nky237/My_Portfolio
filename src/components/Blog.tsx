@@ -57,6 +57,7 @@ const Blog = () => {
           {myData.map((item) => (
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
+              <p>{item.title}</p>
             </div>
           ))}
         </div>
@@ -67,6 +68,7 @@ const Blog = () => {
           {myData2.map((item) => (
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
+              <p>{item.title}</p>
             </div>
           ))}
         </div>
@@ -77,6 +79,7 @@ const Blog = () => {
           {myData3.map((item) => (
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
+              <p>{item.title}</p>
             </div>
           ))}
         </div>
