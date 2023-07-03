@@ -1,6 +1,10 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // REACT LEAFLET
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 // import { LatLngTuple } from "leaflet";
@@ -8,6 +12,33 @@ import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import "leaflet/dist/leaflet.css";
 
 const Contact = () => {
+  // const form = useRef(null);
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_m2qfshm",
+        "template_7iwebsm",
+        form.current || "",
+        "qRnDjemVslQ7AN_P4"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent");
+          if (form.current) {
+            form.current.reset(); // Reset the form fields if form.current is not null
+          }
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Message not sent");
+        }
+      );
+  };
   // const center: LatLngTuple = [9.5934637, 8.1055707];
   return (
     <div id="contact">
@@ -38,16 +69,23 @@ const Contact = () => {
           <form
             action="https://formsubmit.co/0bc4eedcd7b0bd97a5262722c21ba9c2"
             method="POST"
+            ref={form}
+            onSubmit={sendEmail}
           >
+            <ToastContainer />
             <div className="Con">
-              <input type="text" placeholder="full name" />
-              <input type="email" placeholder="Email" />
+              <input type="text" name="name" placeholder="full name" />
+              <input type="email" name="email" placeholder="Email" />
             </div>
             <div>
-              <input type="text" placeholder="Subject" />
+              <input type="text" name="subject" placeholder="Subject" />
             </div>
             <div>
-              <textarea name="" id="" placeholder="Type comment"></textarea>
+              <textarea
+                name="message"
+                id=""
+                placeholder="Type comment"
+              ></textarea>
             </div>
             <button>Send Message</button>
           </form>

@@ -594,6 +594,7 @@ nav .icons {
   height: 60px;
   margin-top: 30px;
   padding: 0 22px;
+  color: #ececec;
   border: 1px solid rgba(255, 255, 255, 0.842);
 }
 .contact textarea {
@@ -603,6 +604,7 @@ nav .icons {
   min-height: 150px;
   width: 100%;
   background: transparent;
+  color: #ececec;
 }
 .contact button {
   margin-top: 15px;
@@ -615,6 +617,7 @@ nav .icons {
 
 .contact .Con input {
   width: 47% !important;
+  color: #ececec;
 }
 
 /* FOOTER */
