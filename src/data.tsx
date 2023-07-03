@@ -14,7 +14,7 @@ import {
   Gity,
   Reducery,
   sushi,
-  LMS,
+  LMSY,
   Diety,
   Note,
   port,
@@ -59,7 +59,7 @@ export const myData: Prof[] = [
 export const myData2: Prof[] = [
   {
     id: 1,
-    image: LMS,
+    image: LMSY,
     para: "lorem30",
   },
   {
