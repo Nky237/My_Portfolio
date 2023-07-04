@@ -58,6 +58,11 @@ const Blog = () => {
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
               <p>{item.title}</p>
+              <div className="hide">
+                <p>{item.title}</p>
+                <p>{item.para}</p>
+                <p>Tap to view details</p>
+              </div>
             </div>
           ))}
         </div>
@@ -69,6 +74,11 @@ const Blog = () => {
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
               <p>{item.title}</p>
+              <div className="hide">
+                <p>{item.title}</p>
+                <p>{item.para}</p>
+                <p>Tap to view details</p>
+              </div>
             </div>
           ))}
         </div>
@@ -80,6 +90,11 @@ const Blog = () => {
             <div key={item.id} onClick={() => handleDivClick(item)}>
               <img src={item.image} alt="" />
               <p>{item.title}</p>
+              <div className="hide">
+                <p>{item.title}</p>
+                <p>{item.para}</p>
+                <p>Tap to view details</p>
+              </div>
             </div>
           ))}
         </div>

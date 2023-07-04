@@ -475,8 +475,28 @@ nav .icons {
 }
 .ProGrid div {
   width: 25%;
+  position: relative;
 }
-
+.ProGrid div .hide {
+  position: absolute;
+  top: -4px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  transition: 2s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  color: #e38301;
+}
+.ProGrid div:hover .hide {
+  display: flex;
+  cursor: pointer;
+}
 .ProGrid div img {
   object-fit: cover;
   width: 100%;
@@ -486,7 +506,7 @@ nav .icons {
   padding-bottom: 5px;
 }
 
-.ProGrid div img:hover {
+.ProGrid div:hover img {
   transform: scale(1.1);
   filter: grayscale(100);
 }
