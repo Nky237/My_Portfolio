@@ -353,12 +353,13 @@ nav .icons {
   margin-top: 30px;
 }
 .cardbio {
-  height: 360px;
+  min-height: 360px;
   width: 360px;
   background-color: black;
   border-radius: 15px;
   line-height: 28px;
   transition: 1s ease-in-out;
+  padding-bottom: 20px;
 }
 .cardbio .rad {
   height: 130px;
@@ -401,9 +402,10 @@ nav .icons {
   background-color: #0c0c14;
   margin: 30px 0;
   display: flex;
-  gap: 20px;
+  gap: 2%;
   padding: 50px 40px;
   line-height: 28px;
+  flex-wrap: wrap;
 }
 .biotxt {
   padding-bottom: 20px;
@@ -414,9 +416,11 @@ nav .icons {
   margin-top: 20px;
 }
 .bioCard1 {
-  width: 37%;
+  width: 23%;
 }
-
+.bioCard2 {
+  width: 74%;
+}
 /* EDUCATION AND SKILLS */
 #skill {
   min-height: 100vh;

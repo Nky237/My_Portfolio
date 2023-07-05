@@ -11,27 +11,36 @@ const Bio = () => {
             <div className="bioImg">
               <img src={Jane} alt="" />
               <div className="one">
-                <a href="">
+                <a
+                  href="https://www.facebook.com/nkemdili.ezike.5"
+                  target="_blank"
+                >
                   <ImFacebook className="icon" />
                 </a>
               </div>
               <div className="two">
-                <a href="">
+                <a
+                  href="https://twitter.com/JHENNA_J?t=7pZQE1QzbP-6iN51fyIWew&s=09"
+                  target="_blank"
+                >
                   <BsTwitter className="icon" />
                 </a>
               </div>
               <div className="three">
-                <a href="">
+                <a href="https://www.instagram.com/jhenna1024/" target="_blank">
                   <AiOutlineInstagram className="icon" />
                 </a>
               </div>
               <div className="four">
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/in/nkemdili-ezike-aba42821a"
+                  target="_blank"
+                >
                   <ImLinkedin2 className="icon" />
                 </a>
               </div>
               <div className="five">
-                <a href="">
+                <a href="https://github.com/Nky237" target="_blank">
                   <BsGithub className="icon" />
                 </a>
               </div>

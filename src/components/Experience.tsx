@@ -14,10 +14,10 @@ const Experience = () => {
         <div className="bioCard2">
           <h3>Genesys Techub</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            officia aperiam reprehenderit et dolorum iste ipsam, ullam aliquam.
-            Dolorum libero at delectus? officia aperiam reprehenderit et dolorum
-            iste ipsam, ullam aliquam. Dolorum libero at delectus?
+            I Actively participated in team projects, collaborating effectively
+            with cross-functional teams to deliver successful web development
+            initiatives. Utilized TypeScript to enhance code maintainability and
+            facilitate smooth collaboration within the team.
           </p>
         </div>
       </div>
@@ -33,10 +33,9 @@ const Experience = () => {
         <div className="bioCard2">
           <h3>HerTechTrail</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            officia aperiam reprehenderit et dolorum iste ipsam, ullam aliquam.
-            Dolorum libero at delectus? officia aperiam reprehenderit et dolorum
-            iste ipsam, ullam aliquam. Dolorum libero at delectus?
+            I taught and mentored students in the fundamentals of HTML, CSS, and
+            JavaScript. Developed personalized lesson plans and instructional
+            materials to cater to the individual learning needs of each student.
           </p>
         </div>
       </div>
@@ -52,10 +51,9 @@ const Experience = () => {
         <div className="bioCard2">
           <h3>Echub</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            officia aperiam reprehenderit et dolorum iste ipsam, ullam aliquam.
-            Dolorum libero at delectus? officia aperiam reprehenderit et dolorum
-            iste ipsam, ullam aliquam. Dolorum libero at delectus?
+            I developed the sign-up and login pages for the website using
+            ReactJS and CSS. Collaborated closely with the team to ensure
+            seamless integration and adherence to design specifications
           </p>
         </div>
       </div>
