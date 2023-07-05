@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useRef, useEffect } from "react";
+import  { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Nav from "./Layout/Nav";
 import Page from "./Page";
