@@ -63,6 +63,9 @@ const Blog = () => {
                 <p>{item.para}</p>
                 <p>Tap to view details</p>
               </div>
+              <button className="see" onClick={() => handleDivClick(item)}>
+                see more
+              </button>
             </div>
           ))}
         </div>
@@ -79,6 +82,9 @@ const Blog = () => {
                 <p>{item.para}</p>
                 <p>Tap to view details</p>
               </div>
+              <button className="see" onClick={() => handleDivClick(item)}>
+                see more
+              </button>
             </div>
           ))}
         </div>
@@ -95,6 +101,9 @@ const Blog = () => {
                 <p>{item.para}</p>
                 <p>Tap to view details</p>
               </div>
+              <button className="see" onClick={() => handleDivClick(item)}>
+                see more
+              </button>
             </div>
           ))}
         </div>

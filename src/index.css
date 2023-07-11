@@ -467,7 +467,7 @@ nav .icons {
   padding-left: 50px;
   padding-right: 40px;
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .proButton {
   display: flex;
@@ -488,9 +488,16 @@ nav .icons {
   gap: 60px;
   margin-top: 50px;
 }
+.ProGrid .see {
+  background-color: #e38301;
+  color: white;
+  padding: 7px 5px;
+  border: none;
+}
 .ProGrid div {
   width: 25%;
   position: relative;
+  margin-bottom: 30px;
 }
 .ProGrid div .hide {
   position: absolute;
