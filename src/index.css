@@ -787,3 +787,60 @@ nav .icons {
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .bioImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .bioImg .one {
+    position: absolute;
+    bottom: 29px;
+    left: -5px;
+  }
+  .bioImg .two {
+    bottom: -18px;
+    left: 90px;
+  }
+  .bioImg .three {
+    bottom: -2px;
+    right: 190px;
+  }
+  .bioImg .four {
+    bottom: -10px;
+    right: 67px;
+  }
+  .bioImg .five {
+    bottom: 12px;
+    right: 20px;
+  }
+  .bioInfo {
+    flex-direction: column;
+    align-items: start;
+  }
+  .cardbio {
+    width: 300px;
+  }
+  .cardbio .biotext {
+    padding: 20px 10px 0 10px;
+  }
+  #exp,
+  #skill,
+  #blog {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .edu2 div h3::after {
+    top: 56px;
+  }
+  .expCard {
+    padding: 50px 20px;
+  }
+  .bioCard2 {
+    padding-top: 40px;
+  }
+  .conIcon p {
+    font-size: 20px;
+  }
+}
