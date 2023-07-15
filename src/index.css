@@ -705,6 +705,13 @@ nav .icons {
   body {
     overflow-x: hidden !important;
   }
+  .pages{
+    width: 100%;
+
+  }
+  .nav{
+    display: none;
+  }
   .nav {
     display: none;
   }
