@@ -710,13 +710,15 @@ nav .icons {
   }
   .nav {
     display: none;
+        width: 20%;
   }
 
   .nav nav {
-    margin-top: 120px;
+    margin-top: 70px;
   }
   .Navshow {
     display: block;
+
   }
   .activy {
     display: block;
