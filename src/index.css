@@ -789,6 +789,9 @@ nav .icons {
 }
 
 @media only screen and (max-width: 600px) {
+  .pages {
+    width: 100%;
+  }
   .bioImg {
     width: 300px;
     height: 300px;
