@@ -1,4 +1,3 @@
-import React from 'react'
 import Loady from './Loader.module.css'
 
 const Loader = () => {
