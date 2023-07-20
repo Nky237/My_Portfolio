@@ -40,7 +40,7 @@ function App() {
     // Simulate a 3-second delay before hiding the loader
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 7000);
   }, []);
 
   return (
