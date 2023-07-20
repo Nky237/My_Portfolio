@@ -1,9 +1,9 @@
-import "./App.css";
-import  { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import Nav from "./Layout/Nav";
 import Page from "./Page";
 import "react-toastify/dist/ReactToastify.css";
+import Loader from './components/loader/Loader'
 
 function App() {
   let tl = gsap.timeline();
@@ -34,13 +34,26 @@ function App() {
     });
   }, [tl]);
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a 3-second delay before hiding the loader
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <>
-      <div className="App">
-        <div className="animate" ref={cursor}></div>
-        <Nav />
-        <Page />
-      </div>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className="App">
+          <div className="animate" ref={cursor}></div>
+          <Nav />
+          <Page />
+        </div>
+      )}
     </>
   );
 }
